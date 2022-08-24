@@ -1,0 +1,38 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>О сайте</h1>
+            <span class="subheading">Основная инфа</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Привет.</p>
+        <p>Сайт - типа как стенка в старом ВК. Сделан благодаря курсу "100 days of code" на Udemy. Как чо работает?</p>
+        <p>
+          <ul>
+            <li>Можно что-нибудь постить, если прошли регистрацию и/или вошли в свой аккаунт. <i>Прим. "картинка на фоне" в форме постинга это ссылка на картинку, которая будет там где обычно находятся картинки, когда проваливаешься в пост.</i></li>
+            <li>Оставлять комменты под другими постами</li>
+            <li>Можно удалять и редактировать посты, но только свои. Удалять и редактировать посты может только админ</li>
+          </ul>
+        </p>
+      <p>Сайт реализован на Flask. Для работы с бд используется flask_sqlalchemy. CSS - бутстрап 5. Аватарки в комментариях- gravatar. Форма обратной связи работает через SMTP.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
